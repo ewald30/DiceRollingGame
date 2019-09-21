@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body{
+  font-family: Oswald, sans-serif;
+  background-image: url("or.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+#reset_sw{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background: #485263;
+  border: 0px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+  color: #a3a7ad;
+  padding: 60px;
+  font-size: 40px;
+  transition: 200ms;
+}
+
+#reset_sw:hover{
+  opacity: 0.95;
+  box-shadow: 7px 7px 10px rgba(0,0,0,.8)
+}
+
+#reset_sw:active{
+  opacity: 0.90;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 700px;
+}
+
+#players{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 30px;
+  margin: 0px;
+  height: 70px;
+  width: 61%;
+  color: #485263;
+}
+
+#game{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  width: 90%;
+  height: 300px;
+  outline: none;
+}
+
+#separator{
+  background: #a3a7ad;
+  width: 3px;
+  margin: 70px;
+  height: 400px;
+}
+
+#game>button{
+  margin: 0px;
+  background: rgba(0, 0, 0, 0.0);
+  border: none;
+  width: 50%;
+  transition: 200ms;
+  padding: 0px;
+  outline: none;
+}
+
+#game>button>img{
+  opacity: .8;
+  margin: 0px;
+  height: 50%;
+  width: 50%;
+  outline: none;
+}
+
+#game>button:hover{
+  opacity: 0.70;
+}
+
+#game>button:active{
+  opacity: 0.50;
+}
+
+#score{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  color: #485263;
+  margin-top: 40px;
+  width: 66%;
+  height: 100px;
+}
+
+.scoretab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#stay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 40px;
+  margin-top: 20px;
+}
+
+#stay>button{
+  border: 0px;
+  background: #485263;
+  color: #a3a7ad;
+  font-size: 40px;
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+  transition: 200ms;
+}
+
+#stay>button:hover{
+  opacity: 0.80;
+  box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+}
+
+#stay>button:active{
+  opacity: 0.70;
+}
+
+#q_mark{
+  border: 2px solid black;
+  border-radius: 100px 0px 0px 100px;
+  font-size: 30px;
+  padding: 10px;
+  background: white;
+  position: fixed;
+  top: 500px;
+  right: 0px;
+  transition: 300ms;
+}
+
+.menu_container{
+  opacity: .0;
+  z-index: -1;
+  background: rgb(255,255,255);
+  border: 2px solid black;
+  border-radius: 100px 0px 0px 100px;
+  position: fixed;
+  right:0px;
+  top: 280px;
+  transition: 300ms;
+  height: 25%;
+  width: 48%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu_container>#title{
+  position: relative;
+  top: 10px;
+  left: 60px;
+  font-size: 25px;
+  transition: 300ms;
+}
+
+.menu_container>ul>li{
+  position: relative;
+  font-size: 20px;
+  left: 30px;
+  display: block;
+  transition: 300ms;
+}
+
+#q_mark:hover + .menu_container{
+  z-index: 3;
+  opacity: 1;
+}
