@@ -3,7 +3,7 @@
 body{
   font-family: Oswald, sans-serif;
   background-image: url("or.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
   -webkit-background-size: cover;
  -moz-background-size: cover;
@@ -107,7 +107,7 @@ body{
   align-items: center;
   font-size: 40px;
   color: #485263;
-  margin-top: 40px;
+  margin-top: 70px;
   width: 66%;
   height: 100px;
 }
