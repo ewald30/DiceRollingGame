@@ -17,12 +17,41 @@
  imgArray[5] = new Image();
  imgArray[5].src = "css/images/dice6.png"
 
+ imgArray[6] = new Image();
+ imgArray[6].src = "css/images/ini.png"
+
+ var player1Name = prompt("Write a name for PLAYER 1");
+ var player2Name = prompt("Write a name for PLAYER 2");
+
+ var name1 = document.getElementById("player1name");
+ name1.innerHTML = player1Name;
+
+ var name2 = document.getElementById("player2name");
+ name2.innerHTML = player2Name;
+
  var score_player1 = 0;
  var score_player2 = 0;
  var stay = false;
  var endGame = false;
 
 //*******************  Function for player rolling  *****************//
+
+function resetGameState(){
+   score_player1 = 0;
+   score_player2 = 0;
+   stay = false;
+   endGame = false;
+  var scorePlayerCurrent = document.getElementById("scorep1_current");
+  scorePlayerCurrent.innerHTML = "YOU ROLLED: 0";
+  var scorePlayerCurrent = document.getElementById("scorep2_current");
+  scorePlayerCurrent.innerHTML = "YOU ROLLED: 0";
+  var scoreText = document.getElementById("scorep1");
+  scoreText.innerHTML = "SCORE: 0";
+  var scoreText = document.getElementById("scorep2");
+  scoreText.innerHTML = "SCORE: 0";
+  imageChange01(7);
+  imageChange02(7);
+}
 
  function stayChange(){
    stay = true;
@@ -34,7 +63,7 @@
      return;
    if(stay)
      return;
-     
+
    var scoreOnClick = 0;
    scoreOnClick += Math.floor(Math.random() * 6) + 1;
    imageChange01(scoreOnClick);
